@@ -313,33 +313,33 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s"  style="background-color: #001F3F;">
-                        <form method="post" action="processar_orcamento.php">
+                        <form action="https://formspree.io/f/xwpegddb" method="POST">
                             <div class="row g-3">
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Seu Nome" style="height: 55px;">
+                                    <input type="text" name="nome" class="form-control bg-light border-0" placeholder="Seu Nome" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Seu Email" style="height: 55px;">
+                                    <input type="email" name="email" class="form-control bg-light border-0" placeholder="Seu Email" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Selecione o Serviço</option>
-                                        <option value="1">Desenvolvimento Web</option>
-                                        <option value="2">Desenvolvimento Apps</option>
-                                        <option value="3">SEO</option>
-                                        <option value="4">Design Gráfico</option>
-                                        <option value="5">Desenvolvimento Softwares</option>
-                                        <option value="6">Social Media</option>
+                                    <select name="servico" class="form-select bg-light border-0" style="height: 55px;" required>
+                                        <option selected disabled>Selecione o Serviço</option>
+                                        <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+                                        <option value="Desenvolvimento Apps">Desenvolvimento Apps</option>
+                                        <option value="SEO">SEO</option>
+                                        <option value="Design Gráfico">Design Gráfico</option>
+                                        <option value="Desenvolvimento Softwares">Desenvolvimento Softwares</option>
+                                        <option value="Social Media">Social Media</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Mensagem"></textarea>
+                                    <textarea name="mensagem" class="form-control bg-light border-0" rows="3" placeholder="Mensagem" required></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn w-100 py-3" type="submit" style="background-color: #FFA500; color: #ffffff;">Solicite um Orçamento</button>
                                 </div>
                             </div>
-                        </form>
+                        </form>                        
                     </div>
                 </div>
             </div>
